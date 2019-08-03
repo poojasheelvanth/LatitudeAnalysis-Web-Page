@@ -1,0 +1,83 @@
+nav{
+    weight: 99%;
+    height: 90px;
+    
+  }
+  
+  .navbar-brand
+  {
+    color: white;
+    font-size: 35px;
+    margin-left:60px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    background-color: LightSeaGreen;
+    padding:20px;
+    }
+  
+  .btn-group{
+    padding-left: 900px;
+    background-color:white;
+    font-size: 60px;
+  }
+  
+  body{  
+    background-color: lightgray;
+  }
+  
+  .left{
+    
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    margin-left: 70px;
+    margin-top:50px;
+    background-color: white;
+    height: 100%;
+  }
+  
+  
+  
+  
+  h2 {
+    color:lightseagreen;
+    align-content: center;
+  }
+  h3 {
+    color:lightseagreen;
+    align-content: center;
+  }
+  
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  img{
+    padding-left: 10px;
+    height:200x;
+    width:200px;  
+    
+  }
+  .intro{
+    height:250x;
+    width:250px; 
+  }
+  p1{
+    color: grey;
+  }
+  
+  
+  .bottom-block{
+    margin-top:20px;
+   bottom: 0;
+   width: 120%;
+   background: gray;
+   padding: 16px;
+   text-align: center;
+   color: white;
+   border-top: 6px solid teal;
+  }
+  
+  
