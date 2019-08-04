@@ -10,31 +10,41 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="datastyles.css">
+  <link rel="stylesheet" href="styles.css">
 
   
 </head>
 <body>
-  <nav class="navbar navbar-expand-md bg-white ">
-    <a class="navbar-brand" href="LatitudeAnalysisDashboard.html">Lattitude</a>
+    <div id="app" class="container-fluid">
+        <nav class="navbar navbar-expand-md  text-light bg-white ">
+          <a class="navbar-brand" href="LatitudeAnalysisDashboard.html">Lattitude</a>
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
     
-    <div class="btn-group ">
-        <div class="dropdown">
-            <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
-              Plots
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="Visualization_Temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="Visualization_Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
-            </div>
-          
-          <a href="Comparison.html"><button type="button" class="btn btn-default">Comparison</button></a>
-        <a href="Data.html"><button type="button" class="btn btn-default">Data</button></a>
+            </ul>
+            <ul class="navbar-nav">
+          <div class="btn-group ">
+              <div class="dropdown">
+                  <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
+                    Plots
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Visualization_Temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="Visualization_Humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
+                  </div>
+                
+                <a href="Comparison.html"><button type="button" class="btn btn-default">Comparison</button></a>
+              <a href="Data.html"><button type="button" class="btn btn-default">Data</button></a>
+            </div> 
+          </div>
+        </nav>
       </div> 
-    </div>
-  </nav>
   <div class="row">
       <div class="col-md-11 box left">
         
@@ -7183,14 +7193,15 @@
             </div>
 
   
-            <div class="bottom-block">
-                @ Copyright Coding Bootcamp 2017
-            </div>   
+              
 </div>
- 
-
-            
 </div> 
+<footer class ="footer">
+<div class="bottom-block">
+    &#169; Copyright Coding Bootcamp 2017
+</div>           
+
 </body>
+
 
 </html>

@@ -15,37 +15,54 @@
   
 </head>
 <body>
-  <nav class="navbar navbar-expand-md bg-white ">
-    <a class="navbar-brand" href="LatitudeAnalysisDashboard.html">Lattitude</a>
-    
-    <div class="btn-group ">
-        <div class="dropdown">
-            <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
-              Plots
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="Visualization_Temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="Visualization_Humidity.html">Humidity</a>
-              <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
-            </div>
-          
-          <a href="Comparison.html"><button type="button" class="btn btn-default">Comparison</button></a>
-        <a href="Data.html"><button type="button" class="btn btn-default">Data</button></a>
-      </div> 
-    </div>
-  </nav>
+    div id="app" class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand bg-info text-white m-2 pl-2 " href="index.html">Latitude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNavDropdown" class="navbar-collapse collapse">
+          <ul class="navbar-nav mr-auto ">
+  
+          </ul>
+          <ul class="navbar-nav">
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Visualization_Temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="Visualization_Humidity.html">Humidity</a>
+                <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
+              </div>
+            </li>
+  
+  
+            <li class="nav-item">
+              <a class="nav-link" href="Comparison.html">Comparison</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="Data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div> 
+  <div class="container-fluid">
   <div class="row">
-      <div class="col-md-7 box left">
+    
+      <div class="col-md-6 box left">
         <div class="col-md-12">
           <h2>Summary: Latitude vs. X</h2>
           <hr/>
-          
-          <div class="row">
-            <div class="col-md-3 picture">
-                <img class="intro" src="Resources\assets\images\MaxTemp.png" alt="Latitude vs Temperature">
-            </div>
-            <div class="col-md-8 ">            
+          <div class="container">
+          <img src="Resources\assets\images\MaxTemp.png"align="left" width="65%" alt="Latitude vs Temperature">
+                   
             <p class="para" >              
               The purpose of this project was to analyze how weather changes as you get closer to the
               equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap
@@ -57,7 +74,7 @@
                 vs. latitude. Factors analyzed included:   
             </p>
             
-          </div>
+          
           <p class="para2">
               temperature,cloudiness, wind-speed and humidity. 
               Additionally, Matplotlib was used to plot aspects of the weather using longitude
@@ -65,33 +82,42 @@
                   provides the source data and visualizations created as part of the analysis,
                   as well as explanations and descriptions of any trends and correlations witnessed.
           </p>
+        </div>
+      </div>    
         
-            
-        </div>
-        </div>
+      
+    
 
       </div>
-      <div class="col-md-4 box right">
-        <div class="col-md-12 a1">
+      
+      <div class="col-md-4 mx-auto ml-auto box right">
+          
           <h2>Visualizations</h2>
           <hr/>
           <div class="row"> 
-            <div class="column">
+        
+            <div class="col-md-6 col-sm-3 col-3">
               
-              <a class="photo" href="Visualization_Temp.html"><img src="Resources\assets\images\MaxTemp.png" alt="Latitude vs Temperature"></a>
-              <a class="photo" href="Visualization_Humidity.html"><img src="Resources\assets\images\Humidity.png" alt="Latitude vs Humidity"> </a>                                    
+              <a class="photo" href="Visualization_Temp.html"><img src="Resources\assets\images\MaxTemp.png" height = 100% width="100%"  alt="Latitude vs Temperature"></a>
             </div>
-            <div class="column">
+            <div class="col-md-6 col-sm-3 col-3">
+              <a class="photo" href="Visualization_Humidity.html"><img src="Resources\assets\images\Humidity.png" height = 100% width="100%"  alt="Latitude vs Humidity"> </a>                                    
+            </div>
+            <div class="col-md-6 col-sm-3 col-3">
               
-              <a class="photo" href="Visualization_Cloudiness.html"><img src="Resources\assets\images\cloudiness.png" alt="Latitude vs cloudiness"></a>
-              <a class="photo" href="Visualization_WindSpeed.html"><img src="Resources\assets\images\WindSpeed.png" alt="Latitude vs Wind Speed"></a>
-                                 
+              <a class="photo" href="Visualization_Cloudiness.html"><img src="Resources\assets\images\cloudiness.png" height = 100% width="100%"  alt="Latitude vs cloudiness"></a>
             </div>
+              <div class="col-md-6 col-sm-3 col-3">
+              <a class="photo" href="Visualization_WindSpeed.html"><img src="Resources\assets\images\WindSpeed.png"height = 100% width="100%"  alt="Latitude vs Wind Speed"></a>
+              </div>                  
+           
+          </div>
           </div>        
         </div>     
       </div>
+    </div> 
     
-      
+    </div> 
   
 
 
@@ -100,7 +126,7 @@
     </div>  
   </div> 
   <div class="bottom-block">
-      @ Copyright Coding Bootcamp 2017
+      &#169; Copyright Coding Bootcamp 2017
     </div>
 </body>
 

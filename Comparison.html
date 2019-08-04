@@ -11,82 +11,115 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
  
-  <link rel="stylesheet" href="stylescomparison.css">
+  <link rel="stylesheet" href="styles.css">
 
   
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-white ">
-        <a class="navbar-brand" href="LatitudeAnalysisDashboard.html">Lattitude</a>
-        
-        <div class="btn-group ">
-            <div class="dropdown">
-                <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
-                  Plots
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="Visualization_Temp.html">Max Temperature</a>
-                  <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
-                  <a class="dropdown-item" href="Visualization_Humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
-                </div>
-              
-              <a href="Comparison.html"><button type="button" class="btn btn-default">Comparison</button></a>
-            <a href="Data.html"><button type="button" class="btn btn-default">Data</button></a>
-          </div> 
-        </div>
-      </nav>
-  <div class="row">
-      <div class="col-md-10 left">
-        <div class="col-md-12">
-          <h2>Comparison: Latitude vs. X</h2>
-          <hr/>
-          Click any plot to get in-depth analysis
-          
-          <div class="col-md-12 a1">         
-                           
-            <div class="row"> 
-                  <div class="column">
-                    
-                    <a class="photo" href="Visualization_Temp.html">
-                        <h4 class="img-header">vs. Temperature</h4>
-                        <img  src="Resources\assets\images\MaxTemp.png"  alt="Latitude vs Temperature">
-                    </a>
-                    
-                    <a class="photo" href="Visualization_Humidity.html">
-                        <h4 class="img-header">vs. Humidity</h4>
-                        <img src="Resources\assets\images\Humidity.png" alt="Latitude vs Humidity"> 
-                    </a>                                    
-                  </div>
-                  <div class="column">
-                    
-                    <a class="photo" href="Visualization_Cloudiness.html">
-                        <h4 class="img-header">vs. Cloudiness</h4><img title="vs Temperature" src="Resources\assets\images\cloudiness.png" alt="Latitude vs cloudiness"></a>
-                    <a class="photo" href="Visualization_WindSpeed.html">
-                            <h4 class="img-header">vs. Windspeed</h4><img title="vs Temperature" src="Resources\assets\images\WindSpeed.png" alt="Latitude vs Wind Speed"></a>
-                                       
-                  </div>
-                </div>        
-              </div>     
-          
-          
-        
-            
-        </div>
-        </div>
-
-     
+    <div id="app" class="container-fluid">
+        <nav class="navbar navbar-expand-md  text-light bg-white ">
+          <a class="navbar-brand" href="LatitudeAnalysisDashboard.html">Lattitude</a>
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
     
+            </ul>
+            <ul class="navbar-nav">
+          <div class="btn-group ">
+              <div class="dropdown">
+                  <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
+                    Plots
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Visualization_Temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="Visualization_Cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="Visualization_Humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="Visualization_WindSpeed.html">Wind Speed</a>
+                  </div>
+                
+                <a href="Comparison.html"><button type="button" class="btn btn-default">Comparison</button></a>
+              <a href="Data.html"><button type="button" class="btn btn-default">Data</button></a>
+            </div> 
+          </div>
+        </nav>
+      </div> 
+      <div class="container" style="background-color:white">
+          <div class="row my-3">
+              <div class="col">
+                  <h6 style="color: white"> text</h6>
+                  <h2 class="text-info">Comparison: Latitude vs X</h2>
+                  <hr>
+                  </hr>
+                  <h6>Click any plot to get an in-depth analysis.</h6>
+  
+  
+  
+              </div>
+          </div>
+          <div class="row my-2">
+              <div class="col-md-6 py-1">
+            <div class="text-center">
+                <div class="card-body">
+              <h6 class="text-info">vs. Max Temperature</h6>
+              <p><a href="Visualization_Temp.html"><img class="photo"  src="Resources\assets\images\MaxTemp.png" alt="Max Temperature"
+                          class="img-fluid"></a></p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 py-1">
+                  <div class="text-center">
+            <div class="card-body">
+                <h6 class="text-info">vs. Humidity</h6>
+                <p><a href="Visualization_Humidity.html"><img class="photo" src="Resources\assets\images\Humidity.png" alt="Humidity"
+                            class="img-fluid"></a></p>
+  
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row py-2">
+          <div class="col-md-6 py-1">
+              <div class="text-center">
+          <div class="card-body">
+              <h6 class="text-info">vs. Cloudiness</h6>
+              <p><a href="Visualization_Cloudiness.html"><img class="photo" src="Resources\assets\images\cloudiness.png" alt="Cloudiness"
+                          class="img-fluid"></a></p>
+  
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 py-1">
+                  <div class="text-center">
+          <div class="card-body">
+              <h6 class="text-info">vs. Wind Speed</h6>
+              <p><a href="Visualization_WindSpeed.html"><img class="photo"src="Resources\assets\images\WindSpeed.png" alt="Wind Speed"
+                          class="img-fluid"></a></p>
+                      </div>
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+  
+  
+      </div>
+  
+  
+      </div>
       
   
 
 
-    </nav>
+    
         
     </div>  
   </div> 
   <div class="bottom-block">
-      @ Copyright Coding Bootcamp 2017
+      &#169; Copyright Coding Bootcamp 2017
     </div>
 </body>
 
